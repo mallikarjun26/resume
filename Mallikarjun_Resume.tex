@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[utf8]{inputenc}
+
+\name{Mallikarjun B R} % Your name
+\address{No 156, NBH Hostel, IIIT-Hyderabad \\ Telangana - 500032} % Your address
+\address{(91)~$\cdot$~9964421652 \\ mallik.jeevan@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf International Institute of Information Technology (IIIT-H)} \hfill {\em December 2013 - Present} \\ 
+MS by Research (Center for Visual Information Technology) in Computer Science Engineering \smallskip \\
+Courses: Statistical Methods in AI, Machine Learning(Audit), Optimization Methods, Computer Vision, Information Retrieval \& Extraction, Digital Image Processing, Intro to Robotics. \\
+Overall GPA: 8.66  
+
+{\bf Rashtreeya Vidyalaya College of Engineering (RVCE), Bangalore} \hfill {\em June 2011} \\ 
+B.E. in Electronics \& Communication Engineering \smallskip \\
+Courses: Artificial Neural Networks, Signals \& Systems. \\
+Overall GPA: 9.35
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Juniper Networks}{July 2011 - January 2014}{ASIC Engineer 2, Silicon and Systems Technology}{Bangalore, Karnataka}
+\item Part of ASIC development team, which delivered two generations of networking ASICs working on 28nm technology. These ASICs are currently being used in products such as QFabric and M \& T-Series routers. 
+\item Modelled a block called TOKEN which does the dynamic arbitration of packets across 1024x1024 Packet Forwarding Engines(PFE) with four levels of priority queuing for each PFE, for design verification.
+\item Part of Full-Chip verification team. Also contributed towards Gate-Level simulation and Functional Coverage.
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  PROJECTS	
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+
+\begin{rSubsection}{Face fiducial detection by consensus of exemplars}{}{}{}
+\item Research project for thesis.
+\end{rSubsection}
+
+\begin{rSubsection}{Face video synthesis}{}{}{}
+\item Face space is represented (fairly) densely using a person\textsc{\char13}s faces extracted from a video. 
+\item Space is represented as a graph with face as nodes and edge weights based on pose and features from fiducial points.
+\item Various traversals in the graph explored to synthesize interesting videos.
+\item 3D video tensor factorization to extract identity and expression of an individual.
+\item Expression factor is introduced to another individual\textsc{\char13}s identity to obtain similar change in expression.
+\end{rSubsection}
+
+\begin{rSubsection}{Sign language detection using CNN}{}{}{}
+\item Classification of English characters represented as hand signs in images.
+\item Convolutional Neural Networks(CNN) has been used to train the classes. 
+\item Various configurations with data augmentation, dropout and non-linear functions have been experi-
+mented.
+\item Accuracy of 60\% achieved as compared to 29\% of baseline model based on Bag of Visual Words.
+\end{rSubsection}
+
+\clearpage
+\begin{rSubsection}{Document Layout Analysis}{}{}{}
+\item Segmentation of document into semantically meaningful blocks using morphological processes.
+\item Each segment is categorized into text, table, heading and figure based on connected component analysis, Hough Transform. 
+\end{rSubsection}
+
+\begin{rSubsection}{Lead character recognition in a movie}{}{}{}
+\item Extracted all faces from the video using haar features.
+\item LBP feature vector is constructed for each of the extracted faces.
+\item Clustering the feature points into clusters using k-means algorithm.
+\item Most similar faces with respect to top 2 clusters(based on the number of points in that cluster) are selected as the lead characters.
+\end{rSubsection}
+
+\begin{rSubsection}{Search Engine for Wikipedia}{}{}{}
+\item Preprocessed Wikipedia corpus of 44GB. 
+\item Built inverted index for the corpus.
+\item Search engine based on tf-idf model was developed.
+\end{rSubsection}
+
+\begin{rSubsection}{Twitter Entity Disambiguation}{}{}{}
+\item Entity disambiguation of tweets. 61 different entities and corresponding tweets as the data set.  
+\item Various features extracted considering labelled data set, entity’s home and Wikipedia pages, WordNet etc.
+\item Supervised Machine Learning (Support Vector Machines) used to train and test the model.
+\item Achieved an accuracy of 40\%-90\% across entities.
+\end{rSubsection}
+
+\begin{rSubsection}{3 Link Manipulator(Robot) path planning using Rapidly Exploring Random Tree}{}{}{}
+\item Developed kinematic model of the robot. 
+\item Exploring configuration space with obstacles using Rapidly Exploring Random Trees(RRT).
+\item Find the path from initial to final position avoiding obstacles. 
+\end{rSubsection}
+
+\begin{rSubsection}{Mobile Controlled Robot}{}{}{}
+\item Robot navigation control using mobile network.  
+\item Communication signal carries DTMF (Dual Tone Multiple Frequency), when a key is pressed.
+\item Signal is decoded to find the key pressed. Navigation is performed based on the input.
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & MATLAB, C++, C, System Verilog, Perl \\
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{PERSONAL ACHIEVEMENTS}
+\item[$\cdot$] Awarded Infineon Scholarship for academic excellence in 3rd year at RVCE, Bangalore in the year 2011.
+\item[$\cdot$] Stood 1st academically in Electronics and Communication Engineering department, RVCE in the 1st and 3rd year. Secured 8th rank overall.
+\item[$\cdot$] Secured a rank of 259 among 120,000 students in a common entrance test for Engineering in Karnataka, India year 2011.
+\item[$\cdot$] Secured National level 17th rank in Mathematica (National Level Maths Exam) in the year 2005.
+\end{rSection}
+
+\end{document}
